@@ -1,0 +1,251 @@
+<!-- https://blog.mackliu.com/archives/1200 -->
+<!-- https://portfolio.mackliu.com/game-01/index.html -->
+<!-- https://codertw.com/前端開發/384254/ -->
+
+<!-- https://www.google.com/search?client=firefox-b-d&q=js+calculater -->
+<!-- https://codepen.io/giana/pen/GJMBEv -->
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Youtube成員</title>
+	<noscript>你目前的瀏覽器不支援(或未啟用)JavaScript。</noscript>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+			font-family: "微軟正黑體";
+		}
+
+		html,
+		body {
+			height:100%;
+		}
+		/* tables */
+		th,
+		td {
+			font-weight: normal;
+			padding: 3px 7px;
+			border-top: 1px solid #dee2e6;
+			border-color: #e2e2e4;
+			height: 30px;
+		}
+
+		table {
+			width:100%;
+			max-width: 1300px;
+			margin: auto;
+			border-collapse: collapse;
+			border: 1px solid #dee2e6;
+		}
+
+		table th:not(:last-child),
+		table td:not(:last-child) {
+			border-right: 1px solid #e2e2e4;
+		}
+
+		table thead tr {
+			background-color: #b0b0b0;
+		}
+
+		table thead th {
+			color: #fff;
+			background-color:#f03940;
+			border-bottom: 2px solid #dee2e6;
+			border-width: 0px;
+		}
+
+		table thead th.active {
+			background-color:rgba(255,255,255,0.5);
+		}
+
+		table tbody tr:nth-child(odd) {
+			background-color: rgba(0,0,0,0.02);
+		}
+
+		table tbody tr:nth-child(even) {
+			background-color: #fff;
+		}
+
+		table tbody tr:nth-child(odd) td.active {
+			background-color: rgba(0,0,0,0);
+		}
+
+		table tbody tr:nth-child(even) td.active {
+			background-color: rgba(0,0,0,0);
+		}
+
+		table tbody tr:hover {
+			background-color: rgba(0,0,0,0.075);
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<table class="rank_list">
+			<thead>
+				<tr>
+					<th>serial</th>
+					<th>中文名</th>
+					<th>通稱</th>
+					<th>市</th>
+					<th>區</th>
+					<th>職務</th>
+					<th>主題</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>陳奕廷</td>
+					<td>Jeffrey</td>
+					<td>新北</td>
+					<td></td>
+					<td>會計</td>
+					<td>外景介紹</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>思捷</td>
+					<td>思思</td>
+					<td>日本</td>
+					<td></td>
+					<td></td>
+					<td>日本相關</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>李光耀</td>
+					<td>Andy</td>
+					<td>新北</td>
+					<td>三重</td>
+					<td>web工程人員</td>
+					<td>正向、寓教於樂類皆可</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td></td>
+					<td>F(Felicia)</td>
+					<td>新北</td>
+					<td>新莊</td>
+					<td>視覺設計</td>
+					<td>有主題性的</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td></td>
+					<td>Justin</td>
+					<td>新北</td>
+					<td>林口</td>
+					<td>PM</td>
+					<td>在線看房、房屋評估</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>張文煥</td>
+					<td>Terry</td>
+					<td>新北</td>
+					<td></td>
+					<td>美編</td>
+					<td>遊戲、籃球</td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>怡璇</td>
+					<td>Eriko</td>
+					<td>新北</td>
+					<td>三重</td>
+					<td></td>
+					<td>美食、益智、生活類</td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td>黃佩儀</td>
+					<td>Alice</td>
+					<td>新北</td>
+					<td>板橋</td>
+					<td>行銷企劃</td>
+					<td>美食旅遊</td>
+				</tr>
+				<tr>
+					<td>9</td>
+					<td></td>
+					<td>Jack</td>
+					<td></td>
+					<td></td>
+					<td>餐軟、網拍</td>
+					<td>遊玩、搞笑</td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>子暄</td>
+					<td>Emily</td>
+					<td></td>
+					<td></td>
+					<td>行銷</td>
+					<td>職涯、專案行銷</td>
+				</tr>
+				<tr>
+					<td>11</td>
+					<td></td>
+					<td>Monica</td>
+					<td>新北</td>
+					<td>新店</td>
+					<td>行銷企劃</td>
+					<td>吃喝玩樂、開箱、街訪(主題採訪)</td>
+				</tr>
+				<tr>
+					<td>12</td>
+					<td>莊雅淇(淇淇)</td>
+					<td>kiki</td>
+					<td>新北</td>
+					<td>三重</td>
+					<td>大學生</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>13</td>
+					<td>黃郁佳</td>
+					<td></td>
+					<td>台北</td>
+					<td>松山</td>
+					<td>美編</td>
+					<td>主題聊天、吃喝玩樂</td>
+				</tr>
+				<tr>
+					<td>14</td>
+					<td></td>
+					<td>Syuan</td>
+					<td>新北</td>
+					<td>新莊</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>15</td>
+					<td></td>
+					<td>湘シャン</td>
+					<td>新北</td>
+					<td>新店</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>16</td>
+					<td></td>
+					<td>Vivian Kuo</td>
+					<td>台北</td>
+					<td>內湖</td>
+					<td></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
