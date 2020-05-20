@@ -21,4 +21,5 @@ Window.onload = function () {
         item += "</tr>";
     }
     document.querySelector('tbody').innerHTML = item;
+    console.log("yes");
 }
