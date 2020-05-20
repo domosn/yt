@@ -4,88 +4,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Youtube成員</title>
+    <title>Youtube成員</title>
+	<link rel="stylesheet" href="./css/style.css">
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+	<link rel="shortcut icon" href="/img/favicon.ico">
 	<noscript>你目前的瀏覽器不支援(或未啟用)JavaScript。</noscript>
-	<style>
-		* {
-			margin: 0;
-			padding: 0;
-			-moz-box-sizing: border-box;
-			-webkit-box-sizing: border-box;
-			box-sizing: border-box;
-			font-family: "微軟正黑體";
-		}
-
-		html,
-		body {
-			height:100%;
-		}
-        img {
-            max-width: 100%;
-            height: auto;
-            width: 50px;
-            display: block;
-            margin: auto;
-            cursor: pointer;
-        }
-		/* tables */
-		th,
-		td {
-			font-weight: normal;
-			padding: 3px 7px;
-			border-top: 1px solid #dee2e6;
-			border-color: #e2e2e4;
-			height: 30px;
-		}
-
-		table {
-			width:100%;
-			max-width: 1300px;
-			margin: auto;
-			border-collapse: collapse;
-			border: 1px solid #dee2e6;
-		}
-
-		table th:not(:last-child),
-		table td:not(:last-child) {
-			border-right: 1px solid #e2e2e4;
-		}
-
-		table thead tr {
-			background-color: #b0b0b0;
-		}
-
-		table thead th {
-			color: #fff;
-			background-color:#f03940;
-			border-bottom: 2px solid #dee2e6;
-			border-width: 0px;
-		}
-
-		table thead th.active {
-			background-color:rgba(255,255,255,0.5);
-		}
-
-		table tbody tr:nth-child(odd) {
-			background-color: rgba(0,0,0,0.02);
-		}
-
-		table tbody tr:nth-child(even) {
-			background-color: #fff;
-		}
-
-		table tbody tr:nth-child(odd) td.active {
-			background-color: rgba(0,0,0,0);
-		}
-
-		table tbody tr:nth-child(even) td.active {
-			background-color: rgba(0,0,0,0);
-		}
-
-		table tbody tr:hover {
-			background-color: rgba(0,0,0,0.075);
-		}
-    </style>
 </head>
 <body>
     <div style="display: none;">
@@ -135,7 +59,7 @@
 			<thead>
 				<tr>
                     <th>#</th>
-                    <th>頭像</th>
+                    <th>line貼圖</th>
 					<th>中文名</th>
 					<th>通稱</th>
 					<th>市</th>
@@ -147,6 +71,11 @@
 			<tbody></tbody>
 		</table>
     </div>
+
+	<div class="mask" style="display: none;">
+		<div class="intro"></div>
+    </div>
+    
     <script src="./js/main.js"></script>
 </body>
 </html>
