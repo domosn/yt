@@ -32,7 +32,7 @@ function overlay_close() {
 }
 
 function dialogBoxMsg(src) {
-	str="<div class='close_container'><span class='close' onclick='overlay_close()'></span></div><div class='ele_container'><img src='" + src + "'></div></div>";
+	str="<div class='close_container'><span class='close' onclick='overlay_close()'></span></div><div class='ele_container'><img src='" + src + "'></div>";
 
 	document.querySelector('.intro').innerHTML=str;
     document.querySelector('.mask').style.display="flex";
