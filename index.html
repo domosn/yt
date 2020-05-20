@@ -312,6 +312,7 @@
         for(var i=0; i < member; ++i){
             item += "<tr>";
             item += "<td>"+ i + "</td>";
+            item += "<td>"+ "圖片"+ "</td>";
             item += "<td>"+ realName[i] + "</td>";
             item += "<td>"+ nickName[i] + "</td>";
             item += "<td>"+ city[i] + "</td>";
@@ -320,7 +321,7 @@
             item += "<td>"+ theme[i] + "</td>";
             item += "</tr>";
         }
-        document.querySelector('tbody').appendChild(item);
+        document.querySelector('tbody').innerHTML(item);
     </script>
 </body>
 </html>
