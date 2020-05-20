@@ -12,6 +12,11 @@ body {
 	height:100%;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 td img {
 	max-width: 100%;
 	height: auto;
@@ -173,8 +178,7 @@ table tbody tr:hover {
 	border-radius: 5px;
 }
 
-.ele_container img,
-.ele_container iframe {
+.ele_container img {
 	border: 0;
 	padding: 10px 0 0 0;
 	margin: auto;
