@@ -38,12 +38,13 @@ td img {
     color: #eb8a1d;
     font-size: 14px;
     font-weight: 700 !important;
-    margin: 0 4px;
+    margin: 0 0 4px 0;
     border: 1px solid #eb8a1d;
     padding: 8px 8px;
-    display: inline-block;
+    display: block;
     line-height: 1;
     vertical-align: baseline;
+    max-width: 300px;
 }
 
 .discuss span.list:hover {
