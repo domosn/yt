@@ -29,7 +29,11 @@ td img {
 	cursor: pointer;
 }
 
-span.list {
+.discuss {
+    margin: 10px 0;
+}
+
+.discuss span.list {
     color: #eb8a1d;
     font-size: 14px;
     font-weight: 700 !important;
@@ -41,7 +45,7 @@ span.list {
     vertical-align: baseline;
 }
 
-span.list:hover {
+.discuss span.list:hover {
     text-decoration: none;
     background-color: #eb8a1d;
     color: #3A3D41;
