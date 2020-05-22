@@ -24,6 +24,24 @@ td img {
 	cursor: pointer;
 }
 
+span.list {
+    color: #eb8a1d;
+    font-size: 14px;
+    font-weight: 700 !important;
+    margin: 0 4px;
+    border: 1px solid #eb8a1d;
+    padding: 8px 8px;
+    display: inline-block;
+    line-height: 1;
+    vertical-align: baseline;
+}
+
+span.list:hover {
+    text-decoration: none;
+    background-color: #eb8a1d;
+    color: #3A3D41;
+}
+
 /* tables */
 th,
 td {
